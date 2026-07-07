@@ -65,7 +65,8 @@ justify-content:space-between;
 
 .logo-area,
 .publisher-area{
-  width:200px; /* fixed same width for both containers */
+  width:200px;
+  height:120px;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -77,10 +78,9 @@ justify-content:space-between;
 
 .logo-area img,
 .publisher-area img{
-  width:100%;        /* image fills container width */
-  height:auto;       /* keep aspect ratio */
-  max-height:130px;  /* limit height to preserve header layout */
-  object-fit:contain;
+  width:100%;
+  height:100%;
+  object-fit:cover;
   display:block;
   transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
   filter:contrast(1.02) saturate(1.03);
