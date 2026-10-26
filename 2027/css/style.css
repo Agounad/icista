@@ -112,7 +112,8 @@ justify-content:space-between;
   filter:contrast(1.02) saturate(1.03);
 }
 
-.publisher-area img:last-child{
+.publisher-area img.conference-logo{
+  height:100%;
   padding:0;
   object-fit:cover;
 }
