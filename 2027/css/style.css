@@ -70,17 +70,30 @@ justify-content:space-between;
   display:flex;
   align-items:center;
   justify-content:center;
+  gap:8px;
   background:#ffffff;
   border-radius:8px;
   box-shadow:0 4px 12px rgba(0,0,0,0.08);
   overflow:hidden;
 }
 
-.logo-area img,
-.publisher-area img{
+.publisher-area{
+  width:360px;
+}
+
+.logo-area img{
   width:100%;
   height:100%;
   object-fit:cover;
+  display:block;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  filter:contrast(1.02) saturate(1.03);
+}
+
+.publisher-area img{
+  width:calc(50% - 4px);
+  height:90%;
+  object-fit:contain;
   display:block;
   transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
   filter:contrast(1.02) saturate(1.03);
