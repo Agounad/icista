@@ -112,6 +112,11 @@ justify-content:space-between;
   filter:contrast(1.02) saturate(1.03);
 }
 
+.publisher-area img:last-child{
+  padding:0;
+  object-fit:cover;
+}
+
 .logo-area img:hover,
 .publisher-area img:hover{
   transform:translateY(-3px) scale(1.02);
