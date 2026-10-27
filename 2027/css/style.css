@@ -917,16 +917,24 @@ transition: transform 0.2s ease;
   font-size: 1.6rem;
 }
 
+#registration .table-wrapper {
+  overflow-x: auto;
+  border: 1px solid #e4eaf4;
+  border-radius: 12px;
+}
+
 #registration .fee-table {
   width: 100%;
+  min-width: 760px;
   border-collapse: collapse;
 }
 
 #registration .fee-table th,
 #registration .fee-table td {
-  padding: 16px 18px;
+  padding: 12px 14px;
   border-bottom: 1px solid #e4eaf4;
   text-align: left;
+  white-space: nowrap;
 }
 
 #registration .fee-table th {
@@ -935,19 +943,60 @@ transition: transform 0.2s ease;
   font-weight: 700;
 }
 
-#registration .fee-table tr.section-row td {
+#registration .fee-table .category-heading {
+  min-width: 190px;
+  background: #f4f8ff;
+}
+
+#registration .fee-table .period-heading {
+  text-align: center;
+  letter-spacing: .03em;
+}
+
+#registration .fee-table .early-heading {
+  background: #e8f0ff;
+  color: #164b87;
+}
+
+#registration .fee-table .regular-heading {
+  background: #e8f5fb;
+  color: #075a78;
+}
+
+#registration .fee-table .mode-heading {
+  font-size: .88rem;
+  text-align: center;
+}
+
+#registration .fee-table .onsite-column {
+  background: #f0f5ff;
+}
+
+#registration .fee-table .online-column {
+  background: #eaf8f6;
+}
+
+#registration .fee-table thead .onsite-column {
+  background: #dce8fa;
+  color: #164b87;
+}
+
+#registration .fee-table thead .online-column {
+  background: #d8efeb;
+  color: #116158;
+}
+
+#registration .fee-table tbody > tr:not(.section-row):nth-child(even) > *:not(.onsite-column):not(.online-column) {
+  background: #fbfdff;
+}
+
+#registration .fee-table tr.section-row th {
   background: #edf5ff;
   font-weight: 700;
   color: #002b55;
   border-bottom: 1px solid #d9e4f4;
-}
-
-#registration .fee-table tr:not(.section-row):nth-child(even) td {
-  background: #fbfdff;
-}
-
-#registration .fee-table td:first-child {
-  width: 42%;
+  text-align: left;
+  white-space: normal;
 }
 
 #registration .info-box {
